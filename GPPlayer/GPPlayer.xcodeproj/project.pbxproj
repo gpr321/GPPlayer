@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0461CDEA1B36B66E00E3D998 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461CDE91B36B66E00E3D998 /* main.m */; };
+		0461CDED1B36B66E00E3D998 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461CDEC1B36B66E00E3D998 /* AppDelegate.m */; };
+		0461CDF01B36B66E00E3D998 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461CDEF1B36B66E00E3D998 /* ViewController.m */; };
+		0461CDF31B36B66E00E3D998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0461CDF11B36B66E00E3D998 /* Main.storyboard */; };
+		0461CDF51B36B66E00E3D998 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0461CDF41B36B66E00E3D998 /* Images.xcassets */; };
+		0461CDF81B36B66E00E3D998 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0461CDF61B36B66E00E3D998 /* LaunchScreen.xib */; };
+		0461CE111B36B7F000E3D998 /* GPDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461CE101B36B7F000E3D998 /* GPDecoder.m */; };
+		04AAD8121B3E9C7500E81231 /* GPAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAD8111B3E9C7500E81231 /* GPAudioManager.m */; };
+		04F724161B36F73B00071D0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F724151B36F73B00071D0A /* UIKit.framework */; };
+		04F724181B36F74700071D0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F724171B36F74700071D0A /* Foundation.framework */; };
+		04F7241A1B36F74F00071D0A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F724191B36F74F00071D0A /* libz.dylib */; };
+		04F7241C1B36F75800071D0A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7241B1B36F75800071D0A /* OpenGLES.framework */; };
+		04F7241E1B36F75F00071D0A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7241D1B36F75F00071D0A /* QuartzCore.framework */; };
+		04F724201B36F76800071D0A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7241F1B36F76800071D0A /* Accelerate.framework */; };
+		04F724221B36F76F00071D0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F724211B36F76F00071D0A /* AudioToolbox.framework */; };
+		04F724241B36F78600071D0A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F724231B36F78600071D0A /* CoreAudio.framework */; };
+		04F724261B36F79700071D0A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F724251B36F79700071D0A /* MediaPlayer.framework */; };
+		04F724281B36F7A700071D0A /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F724271B36F7A700071D0A /* libiconv.dylib */; };
+		04F724301B36F88800071D0A /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242B1B36F88800071D0A /* libavcodec.a */; };
+		04F724311B36F88800071D0A /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242C1B36F88800071D0A /* libavformat.a */; };
+		04F724321B36F88800071D0A /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242D1B36F88800071D0A /* libavutil.a */; };
+		04F724331B36F88800071D0A /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242E1B36F88800071D0A /* libswresample.a */; };
+		04F724341B36F88800071D0A /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242F1B36F88800071D0A /* libswscale.a */; };
+		5C9A2F3D58B72442A08BA8DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C997BB6DA1D7C9C5566DB979 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0461CDE41B36B66E00E3D998 /* GPPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0461CDE81B36B66E00E3D998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0461CDE91B36B66E00E3D998 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0461CDEB1B36B66E00E3D998 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0461CDEC1B36B66E00E3D998 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0461CDEE1B36B66E00E3D998 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0461CDEF1B36B66E00E3D998 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0461CDF21B36B66E00E3D998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0461CDF41B36B66E00E3D998 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0461CDF71B36B66E00E3D998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0461CE0F1B36B7F000E3D998 /* GPDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDecoder.h; sourceTree = "<group>"; };
+		0461CE101B36B7F000E3D998 /* GPDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDecoder.m; sourceTree = "<group>"; };
+		0461CE121B36BF3A00E3D998 /* GPLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPLog.h; sourceTree = "<group>"; };
+		04AAD8101B3E9C7500E81231 /* GPAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAudioManager.h; sourceTree = "<group>"; };
+		04AAD8111B3E9C7500E81231 /* GPAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAudioManager.m; sourceTree = "<group>"; };
+		04F724151B36F73B00071D0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04F724171B36F74700071D0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04F724191B36F74F00071D0A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		04F7241B1B36F75800071D0A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		04F7241D1B36F75F00071D0A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04F7241F1B36F76800071D0A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		04F724211B36F76F00071D0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		04F724231B36F78600071D0A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		04F724251B36F79700071D0A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		04F724271B36F7A700071D0A /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		04F7242B1B36F88800071D0A /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		04F7242C1B36F88800071D0A /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		04F7242D1B36F88800071D0A /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		04F7242E1B36F88800071D0A /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		04F7242F1B36F88800071D0A /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		1F8922D6817E2059B50A7517 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		78E818D62523D6CE45FE162C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C997BB6DA1D7C9C5566DB979 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0461CDE11B36B66E00E3D998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F7241A1B36F74F00071D0A /* libz.dylib in Frameworks */,
+				04F724331B36F88800071D0A /* libswresample.a in Frameworks */,
+				04F724281B36F7A700071D0A /* libiconv.dylib in Frameworks */,
+				04F724261B36F79700071D0A /* MediaPlayer.framework in Frameworks */,
+				04F724341B36F88800071D0A /* libswscale.a in Frameworks */,
+				04F724241B36F78600071D0A /* CoreAudio.framework in Frameworks */,
+				04F724321B36F88800071D0A /* libavutil.a in Frameworks */,
+				04F724221B36F76F00071D0A /* AudioToolbox.framework in Frameworks */,
+				04F724201B36F76800071D0A /* Accelerate.framework in Frameworks */,
+				04F7241E1B36F75F00071D0A /* QuartzCore.framework in Frameworks */,
+				04F724311B36F88800071D0A /* libavformat.a in Frameworks */,
+				04F7241C1B36F75800071D0A /* OpenGLES.framework in Frameworks */,
+				04F724181B36F74700071D0A /* Foundation.framework in Frameworks */,
+				04F724161B36F73B00071D0A /* UIKit.framework in Frameworks */,
+				5C9A2F3D58B72442A08BA8DB /* libPods.a in Frameworks */,
+				04F724301B36F88800071D0A /* libavcodec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0461CDDB1B36B66E00E3D998 = {
+			isa = PBXGroup;
+			children = (
+				0461CE0E1B36B7D100E3D998 /* Core */,
+				0461CDE61B36B66E00E3D998 /* GPPlayer */,
+				0461CDE51B36B66E00E3D998 /* Products */,
+				168A121C6C61BECE808F4B98 /* Pods */,
+				A7E68A9AE0F954228FF64C50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0461CDE51B36B66E00E3D998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0461CDE41B36B66E00E3D998 /* GPPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0461CDE61B36B66E00E3D998 /* GPPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0461CDEB1B36B66E00E3D998 /* AppDelegate.h */,
+				0461CDEC1B36B66E00E3D998 /* AppDelegate.m */,
+				0461CDEE1B36B66E00E3D998 /* ViewController.h */,
+				0461CDEF1B36B66E00E3D998 /* ViewController.m */,
+				0461CDF11B36B66E00E3D998 /* Main.storyboard */,
+				0461CDF41B36B66E00E3D998 /* Images.xcassets */,
+				0461CDF61B36B66E00E3D998 /* LaunchScreen.xib */,
+				0461CDE71B36B66E00E3D998 /* Supporting Files */,
+			);
+			path = GPPlayer;
+			sourceTree = "<group>";
+		};
+		0461CDE71B36B66E00E3D998 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0461CDE81B36B66E00E3D998 /* Info.plist */,
+				0461CDE91B36B66E00E3D998 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0461CE0E1B36B7D100E3D998 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04F724291B36F88800071D0A /* libs */,
+				0461CE0F1B36B7F000E3D998 /* GPDecoder.h */,
+				0461CE101B36B7F000E3D998 /* GPDecoder.m */,
+				0461CE121B36BF3A00E3D998 /* GPLog.h */,
+				04AAD8101B3E9C7500E81231 /* GPAudioManager.h */,
+				04AAD8111B3E9C7500E81231 /* GPAudioManager.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		04F724291B36F88800071D0A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				04F7242A1B36F88800071D0A /* FFmpeg */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		04F7242A1B36F88800071D0A /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				04F7242B1B36F88800071D0A /* libavcodec.a */,
+				04F7242C1B36F88800071D0A /* libavformat.a */,
+				04F7242D1B36F88800071D0A /* libavutil.a */,
+				04F7242E1B36F88800071D0A /* libswresample.a */,
+				04F7242F1B36F88800071D0A /* libswscale.a */,
+			);
+			path = FFmpeg;
+			sourceTree = "<group>";
+		};
+		168A121C6C61BECE808F4B98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F8922D6817E2059B50A7517 /* Pods.debug.xcconfig */,
+				78E818D62523D6CE45FE162C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A7E68A9AE0F954228FF64C50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04F724271B36F7A700071D0A /* libiconv.dylib */,
+				04F724251B36F79700071D0A /* MediaPlayer.framework */,
+				04F724231B36F78600071D0A /* CoreAudio.framework */,
+				04F724211B36F76F00071D0A /* AudioToolbox.framework */,
+				04F7241F1B36F76800071D0A /* Accelerate.framework */,
+				04F7241D1B36F75F00071D0A /* QuartzCore.framework */,
+				04F7241B1B36F75800071D0A /* OpenGLES.framework */,
+				04F724191B36F74F00071D0A /* libz.dylib */,
+				04F724171B36F74700071D0A /* Foundation.framework */,
+				04F724151B36F73B00071D0A /* UIKit.framework */,
+				C997BB6DA1D7C9C5566DB979 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0461CDE31B36B66E00E3D998 /* GPPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0461CE071B36B66E00E3D998 /* Build configuration list for PBXNativeTarget "GPPlayer" */;
+			buildPhases = (
+				EBF1835458A72F0291060A14 /* Check Pods Manifest.lock */,
+				0461CDE01B36B66E00E3D998 /* Sources */,
+				0461CDE11B36B66E00E3D998 /* Frameworks */,
+				0461CDE21B36B66E00E3D998 /* Resources */,
+				1B63155D753EDE9E9A3C4A38 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPPlayer;
+			productName = GPPlayer;
+			productReference = 0461CDE41B36B66E00E3D998 /* GPPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0461CDDC1B36B66E00E3D998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = gpr;
+				TargetAttributes = {
+					0461CDE31B36B66E00E3D998 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 0461CDDF1B36B66E00E3D998 /* Build configuration list for PBXProject "GPPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0461CDDB1B36B66E00E3D998;
+			productRefGroup = 0461CDE51B36B66E00E3D998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0461CDE31B36B66E00E3D998 /* GPPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0461CDE21B36B66E00E3D998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0461CDF31B36B66E00E3D998 /* Main.storyboard in Resources */,
+				0461CDF81B36B66E00E3D998 /* LaunchScreen.xib in Resources */,
+				0461CDF51B36B66E00E3D998 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B63155D753EDE9E9A3C4A38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF1835458A72F0291060A14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0461CDE01B36B66E00E3D998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0461CDF01B36B66E00E3D998 /* ViewController.m in Sources */,
+				04AAD8121B3E9C7500E81231 /* GPAudioManager.m in Sources */,
+				0461CDED1B36B66E00E3D998 /* AppDelegate.m in Sources */,
+				0461CDEA1B36B66E00E3D998 /* main.m in Sources */,
+				0461CE111B36B7F000E3D998 /* GPDecoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0461CDF11B36B66E00E3D998 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0461CDF21B36B66E00E3D998 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0461CDF61B36B66E00E3D998 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0461CDF71B36B66E00E3D998 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0461CE051B36B66E00E3D998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0461CE061B36B66E00E3D998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0461CE081B36B66E00E3D998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8922D6817E2059B50A7517 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GPPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Core/libs/FFmpeg",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) FFmpeg";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		0461CE091B36B66E00E3D998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E818D62523D6CE45FE162C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GPPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Core/libs/FFmpeg",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) FFmpeg";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0461CDDF1B36B66E00E3D998 /* Build configuration list for PBXProject "GPPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0461CE051B36B66E00E3D998 /* Debug */,
+				0461CE061B36B66E00E3D998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0461CE071B36B66E00E3D998 /* Build configuration list for PBXNativeTarget "GPPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0461CE081B36B66E00E3D998 /* Debug */,
+				0461CE091B36B66E00E3D998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0461CDDC1B36B66E00E3D998 /* Project object */;
+}
