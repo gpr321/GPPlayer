@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "GPDecoder.h"
-#import "GPAudioManager.h"
+#import "GPPlayer.h"
 
-@interface ViewController ()
 
-@property (nonatomic,strong) GPDecoder *decoder;
+@interface ViewController () <GPPlayerDelegate>
+
+@property (nonatomic,strong) GPPlayer *player;
 
 @end
 
@@ -20,14 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    GPDecoder *decoder = [[GPDecoder alloc] init];
-    self.decoder = decoder;
-    [[GPAudioManager audioManager] activateAudioSession];
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [decoder openURLString:@"http://118.26.135.134/media/test/out.m3u8" error:NULL];
-    });
+    NSString *urlString = @"http://118.26.135.133:80/media/hls/DvbR1tvdsdxe.m3u8";
+    GPPlayer *player = [[GPPlayer alloc] initWithURLString:urlString targetView:self.view];
+    self.player = player;
+    player.delegate = self;
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.player prepare];
+}
 
+#pragma mark - GPPlayerDelegate
+- (void)player:(GPPlayer *)player stateDidChanged:(GPPlayerState)state withParams:(NSDictionary *)params{
+    switch ( state ) {
+        case GPPlayerStatePrepared:
+            [player play];
+            break;
+            
+        default:
+            break;
+    }
+}
 
 @end

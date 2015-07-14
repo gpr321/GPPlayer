@@ -30,6 +30,9 @@
 		04F724321B36F88800071D0A /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242D1B36F88800071D0A /* libavutil.a */; };
 		04F724331B36F88800071D0A /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242E1B36F88800071D0A /* libswresample.a */; };
 		04F724341B36F88800071D0A /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F7242F1B36F88800071D0A /* libswscale.a */; };
+		18B615311B54D178005160BC /* GPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B615301B54D178005160BC /* GPPlayer.m */; };
+		18F409501B53D5AF0043BEE8 /* GPDecoderRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4094F1B53D5AF0043BEE8 /* GPDecoderRenderView.m */; };
+		18F409531B53D9690043BEE8 /* GPPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F409521B53D9690043BEE8 /* GPPlayerController.m */; };
 		5C9A2F3D58B72442A08BA8DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C997BB6DA1D7C9C5566DB979 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,12 @@
 		04F7242D1B36F88800071D0A /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		04F7242E1B36F88800071D0A /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		04F7242F1B36F88800071D0A /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		18B6152F1B54D178005160BC /* GPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPlayer.h; sourceTree = "<group>"; };
+		18B615301B54D178005160BC /* GPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPlayer.m; sourceTree = "<group>"; };
+		18F4094E1B53D5AF0043BEE8 /* GPDecoderRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDecoderRenderView.h; sourceTree = "<group>"; };
+		18F4094F1B53D5AF0043BEE8 /* GPDecoderRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDecoderRenderView.m; sourceTree = "<group>"; };
+		18F409511B53D9690043BEE8 /* GPPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPlayerController.h; sourceTree = "<group>"; };
+		18F409521B53D9690043BEE8 /* GPPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPlayerController.m; sourceTree = "<group>"; };
 		1F8922D6817E2059B50A7517 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		78E818D62523D6CE45FE162C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C997BB6DA1D7C9C5566DB979 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +157,12 @@
 				0461CE121B36BF3A00E3D998 /* GPLog.h */,
 				04AAD8101B3E9C7500E81231 /* GPAudioManager.h */,
 				04AAD8111B3E9C7500E81231 /* GPAudioManager.m */,
+				18F4094E1B53D5AF0043BEE8 /* GPDecoderRenderView.h */,
+				18F4094F1B53D5AF0043BEE8 /* GPDecoderRenderView.m */,
+				18F409511B53D9690043BEE8 /* GPPlayerController.h */,
+				18F409521B53D9690043BEE8 /* GPPlayerController.m */,
+				18B6152F1B54D178005160BC /* GPPlayer.h */,
+				18B615301B54D178005160BC /* GPPlayer.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -305,10 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0461CDF01B36B66E00E3D998 /* ViewController.m in Sources */,
+				18B615311B54D178005160BC /* GPPlayer.m in Sources */,
+				18F409531B53D9690043BEE8 /* GPPlayerController.m in Sources */,
 				04AAD8121B3E9C7500E81231 /* GPAudioManager.m in Sources */,
 				0461CDED1B36B66E00E3D998 /* AppDelegate.m in Sources */,
 				0461CDEA1B36B66E00E3D998 /* main.m in Sources */,
 				0461CE111B36B7F000E3D998 /* GPDecoder.m in Sources */,
+				18F409501B53D5AF0043BEE8 /* GPDecoderRenderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +439,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GPPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,7 +459,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GPPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
